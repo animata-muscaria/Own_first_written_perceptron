@@ -3,7 +3,7 @@ import random
 class Perceptron:
     # init, weights, bias und learning rate werden initialisiert
 
-    def __init__(self,input_size, learning_rate= 2):
+    def __init__(self,input_size, learning_rate= 0.1):
         self.weights =[random.uniform(-1,1) for _ in range(input_size)]
         self.bias =random.uniform(-1,1)
         self.learning_rate = learning_rate
